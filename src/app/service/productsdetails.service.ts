@@ -13,4 +13,5 @@ export class ProductsdetailsService {
   {
     return this.http.get(`${environment.apiEndpoint}${appConstant.apiRoute.products}`)
   }
+  
 }

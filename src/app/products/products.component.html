@@ -12,7 +12,8 @@
           <p>{{product.description}}</p>
         </mat-card-content>
         <mat-card-actions style="text-align:center;" >
-          <button mat-raised-button >Details</button>
+          <button mat-raised-button [routerLink]="['/product', product.id]" >Details</button>
+          <!-- <button mat-raised-button (click)="goToProduct($event, product.id)" >Details</button> -->
         </mat-card-actions>
       </mat-card>
  </div>
