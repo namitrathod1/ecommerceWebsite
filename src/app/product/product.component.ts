@@ -48,6 +48,7 @@ export class ProductComponent implements OnInit {
   price: [product.price, Validators.required],
   stock: [product.stock, Validators.required],
   category:[product.category, Validators.required]
+  
 });}
 submit() {
   console.log(this.updateform.value);

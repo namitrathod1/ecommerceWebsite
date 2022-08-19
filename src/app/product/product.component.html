@@ -61,7 +61,7 @@
       
       <mat-form-field class="example-full-width" appearance="fill">
         <mat-label>DISCOUNT</mat-label>
-        <input type="text" matInput formControlName="discount" placeholder="discount">
+        <input type="number" matInput formControlName="discount" placeholder="discount">
         <mat-error *ngIf="updateform.hasError('discount') && !updateform.hasError('required')">
           Please enter a valid discount
         </mat-error>
@@ -73,7 +73,7 @@
     <div class="col-12 md:col-6 lg:col-3">
       <mat-form-field class="example-full-width" appearance="fill">
         <mat-label>PRICE</mat-label>
-        <input type="text" matInput formControlName="price" placeholder="price">
+        <input type="number" matInput formControlName="price" placeholder="price">
         <mat-error *ngIf="updateform.hasError('price') && !updateform.hasError('required')">
           Please enter a valid price
         </mat-error>
@@ -85,7 +85,7 @@
     <div class="col-12 md:col-6 lg:col-3">
       <mat-form-field class="example-full-width" appearance="fill">
         <mat-label>STOCK</mat-label>
-        <input type="text" matInput formControlName="stock" placeholder="STOCK">
+        <input type="number" matInput formControlName="stock" placeholder="STOCK">
         <mat-error *ngIf="updateform.hasError('stock') && !updateform.hasError('required')">
           Please enter a valid stock
         </mat-error>

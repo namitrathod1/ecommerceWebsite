@@ -1,13 +1,14 @@
 <h1><strong>Products</strong></h1>
 <div class="product-container">
   <div class="product-item" *ngFor="let product of products" >
-    <a [routerLink]="['/product', product.id]">
+    <!-- <a [routerLink]="['/product', product.id]"></a> -->
       <mat-card class="example-card" >
         <mat-card-header>
           <div mat-card-avatar class="header-image"></div>
-          <mat-card-title>{{ product.title }}</mat-card-title>
+          <mat-card-title>{{ product.title | uppercase}} </mat-card-title>
           <mat-card-subtitle>{{product.brand}}</mat-card-subtitle>
         </mat-card-header>
+        
         <img mat-card-image src= {{product.images[0]}} alt="Photo of products">
         <mat-card-content>
           <p>{{product.description}}</p>
@@ -18,5 +19,5 @@
           <!-- <button mat-raised-button (click)="goToProduct($event, product.id)" >Details</button> -->
         </mat-card-actions>
        </mat-card>
-    
-
+  </div>
+</div>
