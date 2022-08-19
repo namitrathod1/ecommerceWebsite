@@ -30,3 +30,102 @@
     </div>
   </div>
 </div>
+
+<form novalidate [formGroup]="updateform" (ngSubmit)="submit()" >
+  <div class="grid">
+    <div class="col-12 md:col-6 lg:col-3">
+      <mat-form-field class="example-full-width" appearance="fill">
+        <mat-label>TITLE</mat-label>
+        <input type="text" matInput formControlName="title" placeholder="Title">
+        <mat-error *ngIf="updateform.hasError('Title') && !updateform.hasError('required')">
+          Please enter a valid title
+        </mat-error>
+        <mat-error *ngIf="updateform.hasError('required')">
+          Title is <strong>required</strong>
+        </mat-error>
+      </mat-form-field>
+    </div>
+    <div class="col-12 md:col-6 lg:col-3">
+      <mat-form-field class="example-full-width" appearance="fill">
+        <mat-label>DESCRIPTION</mat-label>
+        <input type="text" matInput formControlName="description" placeholder="Description">
+        <mat-error *ngIf="updateform.hasError('description') && !updateform.hasError('required')">
+          Please enter a valid description
+        </mat-error>
+        <mat-error *ngIf="updateform.hasError('required')">
+          description is <strong>required</strong>
+        </mat-error>
+      </mat-form-field>
+    </div>
+    <div class="col-12 md:col-6 lg:col-3">
+      
+      <mat-form-field class="example-full-width" appearance="fill">
+        <mat-label>DISCOUNT</mat-label>
+        <input type="text" matInput formControlName="discount" placeholder="discount">
+        <mat-error *ngIf="updateform.hasError('discount') && !updateform.hasError('required')">
+          Please enter a valid discount
+        </mat-error>
+        <mat-error *ngIf="updateform.hasError('required')">
+          discount is <strong>required</strong>
+        </mat-error>
+      </mat-form-field>
+    </div>
+    <div class="col-12 md:col-6 lg:col-3">
+      <mat-form-field class="example-full-width" appearance="fill">
+        <mat-label>PRICE</mat-label>
+        <input type="text" matInput formControlName="price" placeholder="price">
+        <mat-error *ngIf="updateform.hasError('price') && !updateform.hasError('required')">
+          Please enter a valid price
+        </mat-error>
+        <mat-error *ngIf="updateform.hasError('required')">
+          price is <strong>required</strong>
+        </mat-error>
+      </mat-form-field>
+    </div>
+    <div class="col-12 md:col-6 lg:col-3">
+      <mat-form-field class="example-full-width" appearance="fill">
+        <mat-label>STOCK</mat-label>
+        <input type="text" matInput formControlName="stock" placeholder="STOCK">
+        <mat-error *ngIf="updateform.hasError('stock') && !updateform.hasError('required')">
+          Please enter a valid stock
+        </mat-error>
+        <mat-error *ngIf="updateform.hasError('required')">
+          stock is <strong>required</strong>
+        </mat-error>
+      </mat-form-field>
+    </div>
+    <div class="col-12 md:col-6 lg:col-3">
+      <mat-form-field class="example-full-width" appearance="fill">
+        <mat-label>CATEGORY</mat-label>
+        <input type="text" matInput formControlName="category" placeholder="category">
+        <mat-error *ngIf="updateform.hasError('category') && !updateform.hasError('required')">
+          Please enter a valid category
+        </mat-error>
+        <mat-error *ngIf="updateform.hasError('required')">
+          category is <strong>required</strong>
+        </mat-error>
+      </mat-form-field>
+    </div>
+  </div>
+  <div class="submitbtn">
+    <button mat-raised-button type="submit">SUBMIT</button>
+  </div>
+</form>
+
+  <!-- <div class="grid">
+    <div class="col-12 md:col-6 lg:col-3">
+      <input type="text" placeholder="Title" formControlName="title" />
+    </div>
+    <div class="col-12 md:col-6 lg:col-3">
+      <input type="text" placeholder="Description"  formControlName="description" />
+    </div>
+    <div class="col-12 md:col-6 lg:col-3">
+      <input type="text" placeholder="Discount" formControlName="discount" />
+    </div>
+    <div class="col-12 md:col-6 lg:col-3">
+      <input type="text" placeholder="Price" formControlName="price" />
+    </div>
+  </div>
+  <div class="submitbtn">
+    <button mat-raised-button type="submit">SUBMIT</button>
+  </div> -->

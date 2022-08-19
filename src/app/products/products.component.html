@@ -1,6 +1,7 @@
-<h1>Products</h1>
+<h1><strong>Products</strong></h1>
 <div class="product-container">
   <div class="product-item" *ngFor="let product of products" >
+    <a [routerLink]="['/product', product.id]">
       <mat-card class="example-card" >
         <mat-card-header>
           <div mat-card-avatar class="header-image"></div>
@@ -11,10 +12,11 @@
         <mat-card-content>
           <p>{{product.description}}</p>
         </mat-card-content>
+      
         <mat-card-actions style="text-align:center;" >
-          <button mat-raised-button [routerLink]="['/product', product.id]" >Details</button>
+          <button mat-raised-button class="detailsbtn" [routerLink]="['/product', product.id]" >Details</button>
           <!-- <button mat-raised-button (click)="goToProduct($event, product.id)" >Details</button> -->
         </mat-card-actions>
-      </mat-card>
- </div>
-</div>
+       </mat-card>
+    
+

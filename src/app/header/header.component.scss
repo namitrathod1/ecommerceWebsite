@@ -1,12 +1,25 @@
 :host{
+  
+  mat-toolbar{
+    background-color: #64c368;
+    padding: 10px 20px; 
+  }
 .example-spacer {
     flex: 1 1 auto;
   }
   button{
     border: none;
   }
+  
+  .productsbtn{
+    // background-color: ;
+    // color: white;
+    padding: 0px 30px;
+    
+  }
   #myapp{
     text-decoration: none;
-    color: black;
+    color:white;
+    padding: 0px 20px;
   }
 }
