@@ -1,52 +1,53 @@
 :host {
-    .productpage {
-      // flex: row;
-      padding: 25px;
-    }
+    // .productpage {
+    //   // flex: row;
+    //   padding: 25px;
+    // }
     h1,h2 {
       text-align: center;
       color:#5dc260;
     }
-    .property{
-      color: #5dc260;
-      font-weight: bolder;
-    }
-    .value{
-      padding-left: 5px;
-    }
-    .detailspart {
-      padding: 10px 50px;
-    }
-    .details {
-      padding: 10px;
-    }
+    // .property{
+    //   color: #5dc260;
+    //   font-weight: bolder;
+    // }
+    // .value{
+    //   padding-left: 5px;
+    // }
+    // .detailspart {
+    //   padding: 10px 50px;
+    // }
+    // .details {
+    //   padding: 10px;
+    // }
 
-    input {
-      width: 100%;
-      padding: 12px 20px;
-      margin: 8px 0;
-      border: 1px solid #ccc;
-      border-radius: 4px;
-      box-sizing: border-box;
-    }
+    // input {
+    //   width: 100%;
+    //   padding: 12px 20px;
+    //   margin: 8px 0;
+    //   border: 1px solid #ccc;
+    //   border-radius: 4px;
+    //   box-sizing: border-box;
+    // }
+   
     .submitbtn {
       display: flex;
       justify-content: center;
       align-items: center;
-      padding:30px 0px;
+      padding:30px 0px;}
       button {
         background-color: #56c85a; /* Green */
-        border: none;
-        color: white;
-        padding: 10px 20px;
-        text-align: center;
-        text-decoration: none;
-        display: inline-block;
-        font-size: 16px;
+        // border: none;
+        // color: white;
+        // padding: 10px 20px;
+        // text-align: center;
+        // text-decoration: none;
+        // display: inline-block;
+        // font-size: 16px;
       }
+
       button:hover{
         background-color: #3e8e41;
-        box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
       }
       .formsection{
         // display: inline-block;
@@ -81,5 +82,5 @@
         display: flex;
       }
     }
-  }
+  
   

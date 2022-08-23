@@ -1,5 +1,9 @@
-<h1>{{ product.title }}</h1>
-<div class="productpage">
+<div *ngIf="product">
+  <app-productdetail [product]="product" ></app-productdetail>
+<app-productform [product]="product"></app-productform>
+</div>
+<!-- <div class="productpage">
+  <h1>{{ product.title }}</h1>
   <div class="imagepart">
     <img src="{{ product.images[0] }}" alt="product image" />
   </div>
@@ -29,8 +33,10 @@
       <span class="value">{{ product.rating }}</span>
     </div>
   </div>
-</div>
+</div> -->
 
+<!-- <h2 >Form</h2>
+<div class="formsection" style=padding:40px>
 <form novalidate [formGroup]="updateform" (ngSubmit)="submit()" >
   <div class="grid">
     <div class="col-12 md:col-6 lg:col-3">
@@ -111,6 +117,7 @@
     <button mat-raised-button type="submit">SUBMIT</button>
   </div>
 </form>
+</div> -->
 
   <!-- <div class="grid">
     <div class="col-12 md:col-6 lg:col-3">

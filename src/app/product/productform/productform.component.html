@@ -1,0 +1,74 @@
+<h2 >Form</h2>
+<div class="formsection" style=padding:40px>
+<form  class="example-form" [formGroup]="productform" (ngSubmit)="submit(productform.value, productform.valid)" >
+  <div class="grid">
+    <div class="col-12 md:col-6 lg:col-3">
+      <mat-form-field class="example-full-width" appearance="fill">
+        <mat-label>TITLE</mat-label>
+        <input type="text" matInput formControlName="title" placeholder="Title">
+        <mat-error *ngIf="productform.get('title').hasError('required')">
+          Title is <strong>required</strong>
+        </mat-error>
+      </mat-form-field>
+    </div>
+    <div class="col-12 md:col-6 lg:col-3">
+      <mat-form-field class="example-full-width" appearance="fill">
+        <mat-label>DESCRIPTION</mat-label>
+        <input type="text" matInput formControlName="description" placeholder="Description">
+        <mat-error *ngIf="productform.get('description').hasError('required')">
+          Description is <strong>required</strong>
+        </mat-error>
+      </mat-form-field>
+    </div>
+    <div class="col-12 md:col-6 lg:col-3">
+      
+      <mat-form-field class="example-full-width" appearance="fill">
+        <mat-label>DISCOUNT</mat-label>
+        <input type="number" matInput formControlName="discount" placeholder="discount">
+        <mat-error *ngIf="productform.get('discount').hasError('required')">
+          discount is <strong>required</strong>
+        </mat-error>
+        <mat-error *ngIf="productform.get('discount').hasError('max')">
+          Maximum discount <strong>{{maxdiscount}}</strong>
+        </mat-error>
+      </mat-form-field>
+    </div>
+    <div class="col-12 md:col-6 lg:col-3">
+      <mat-form-field class="example-full-width" appearance="fill">
+        <mat-label>PRICE</mat-label>
+        <input type="number" matInput formControlName="price" placeholder="price">
+        <mat-error *ngIf="productform.get('price').hasError('required')">
+          price is <strong>required</strong>
+        </mat-error>
+      </mat-form-field>
+    </div>
+    <div class="col-12 md:col-6 lg:col-3">
+      <mat-form-field class="example-full-width" appearance="fill">
+        <mat-label>STOCK</mat-label>
+        <input type="number" matInput formControlName="stock" placeholder="STOCK">
+        <!-- <mat-error *ngIf="productform.hasError('stock') && !productform.hasError('required')">
+          Please enter a valid stock
+        </mat-error> -->
+        <mat-error *ngIf="productform.get('stock').hasError('required')">
+          stock is <strong>required</strong>
+        </mat-error>
+      </mat-form-field>
+    </div>
+    <div class="col-12 md:col-6 lg:col-3">
+      <mat-form-field class="example-full-width" appearance="fill">
+        <mat-label>CATEGORY</mat-label>
+        <input type="text" matInput formControlName="category" placeholder="category">
+        <!-- <mat-error *ngIf="productform.hasError('category') && !productform.hasError('required')">
+          Please enter a valid category
+        </mat-error> -->
+        <mat-error *ngIf="productform.get('category').hasError('required')">
+          category is <strong>required</strong>
+        </mat-error>
+      </mat-form-field>
+    </div>
+  </div>
+  <div class="submitbtn">
+    <button mat-raised-button f-center color="primary" [disabled]="productform.isValid" type="submit">SUBMIT</button>
+  </div>
+</form>
+</div>
