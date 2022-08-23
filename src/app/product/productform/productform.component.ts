@@ -1,5 +1,4 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { SharedModule } from 'src/app/shared/shared.module';
 
 
 import { FormBuilder, Validators } from '@angular/forms';
