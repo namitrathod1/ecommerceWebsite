@@ -21,3 +21,11 @@
        </mat-card>
   </div>
 </div>
+<div class="pagination">
+  <mat-paginator [length]="length"
+              [pageSize]="pageSize"
+              [pageSizeOptions]="pageSizeOptions"
+              (page)="onnext($event)"
+              aria-label="Select page">
+</mat-paginator>
+</div>
