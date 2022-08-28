@@ -34,7 +34,7 @@ export class ProductComponent implements OnInit {
     this.http
       .get(`${environment.apiEndpoint}${appConstant.apiRoute.products}/${id}`)
       .subscribe((data) => {
-        console.log(data);
+        // console.log(data);
         // this.updateforms(data);
         this.product = data as any;
       });
