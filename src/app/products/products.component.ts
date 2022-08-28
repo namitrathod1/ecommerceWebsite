@@ -2,7 +2,7 @@ import { Component, OnInit, ViewChild } from '@angular/core';
 import { ProductsdetailsService } from '../service/productsdetails.service';
 import { Router} from '@angular/router';
 import {PageEvent} from '@angular/material/paginator';
-import { environment } from 'src/environments/environment';
+import { environment } from '../../environments/environment';
 import { appConstant } from '../app.constant';
 import { HttpClient } from '@angular/common/http';
 @Component({
